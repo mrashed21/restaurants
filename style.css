@@ -1,0 +1,861 @@
+/* ===== google fonts ====== */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap");
+
+/* ====== universal section ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+font-family: "Roboto Slab", serif;
+font-family: "Fira Sans", sans-serif;
+font-family: "Poppins", sans-serif;
+*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  max-width: 1200px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hove {
+  transition: 0.5s;
+}
+.hove:hover {
+  transform: scale(1.1);
+}
+
+.bg-colour {
+  background: #fff1da;
+}
+.bg-color {
+  background: #f2f2f2;
+}
+/* ====== start nav section ======= */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0 15px;
+}
+hr {
+  color: #f1f3f4;
+  font-weight: bold;
+  box-shadow: 3px 1px 5px #f1f3f4;
+}
+
+.logo {
+  min-width: 150px;
+  font-family: "Fira Sans", sans-serif;
+}
+.logo i,
+span {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 700;
+  word-spacing: -2px;
+  color: #39db4a;
+}
+.logo span {
+  color: #000;
+}
+.menu ul {
+  display: flex;
+  gap: 40px;
+}
+.menu a {
+  text-transform: capitalize;
+  font-size: 21px;
+  font-weight: 500;
+  color: #272727;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+.menu a:hover {
+  color: #ef3535;
+  background: #39db4a;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 21px;
+}
+.menu .home {
+  background: #39db4a;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.auth {
+  display: flex;
+  gap: 40px;
+}
+.auth .icon {
+  width: 35px;
+  height: 35px;
+  background-color: #d9eaea;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.auth i {
+  padding: 1.5px;
+  font-size: 20px;
+  transform: translate(7px, 7px);
+}
+.auth .icon:hover {
+  transform: scale(1.2);
+  background: #ffffff;
+  color: #ef3535;
+}
+/* ====== end nav section ======= */
+/* =========================================== */
+/* ====== start hero section ======= */
+header {
+  padding-bottom: 20px;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.hero .text-content {
+  margin: auto;
+  widows: 50%;
+}
+.hero .text-content .frist {
+  color: #39db4a;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.hero .text-content h1 {
+  font-size: 44px;
+  font-family: "Fira Sans", sans-serif;
+  text-transform: capitalize;
+  color: #1a2855;
+}
+.hero .text-content p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #786b6a;
+  width: 60%;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.hero .text-content a {
+  padding: 10px 22px;
+  background: #192b53;
+  color: #fff;
+  display: inline-block;
+  margin-top: 25px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+.hero .image {
+  max-width: 600px;
+  max-height: 700px;
+  transition: 1s;
+}
+.image:hover {
+  transform: scale(1.2);
+}
+.hero .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #cecdcd;
+}
+.circle .frist {
+  color: #28ac61;
+}
+
+/* ====== end hero section ====== */
+/* =========================================== */
+/* ====== start tasty section ======= */
+.tasty {
+  margin-top: 40px;
+}
+.tasty h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #ffb411;
+}
+.tasty .food-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.tasty .food-item .card {
+  position: relative;
+  max-width: 300px;
+  max-height: 370px;
+  box-shadow: 2px 7px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.tasty .food-item .card:hover {
+  box-shadow: 2px 7px 12px 0px rgba(0, 0, 0, 0.4);
+}
+.tasty .food-item .card img {
+  width: 100%;
+  align-self: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.tasty .food-item .card h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  padding-left: 25px;
+}
+.tasty .food-item .card p {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-left: 25px;
+}
+.tasty .food-item .card .price {
+  margin-bottom: 10px;
+}
+.tasty .food-item .card .cart {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #ffb411;
+  width: 50px;
+  height: 50px;
+  border-radius: 0 15px;
+  transition: 0.5s;
+}
+.tasty .food-item .card .cart:hover i {
+  transform: scale(1.3);
+  color: red;
+}
+.tasty .food-item .card .cart i {
+  font-size: 30px;
+  padding: 10px 0px 0px 5px;
+  transition: 0.5s;
+}
+/* ====== end tasty section ======= */
+/* ====================================== */
+/* ====== start our dishes section ====== */
+.dishes {
+  margin-top: 90px;
+  padding: 50px 0;
+}
+.dishes .text-content {
+  text-align: center;
+}
+.dishes .text-content p {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+  color: #39db4a;
+}
+.dishes .text-content h2 {
+  text-transform: uppercase;
+  color: #ffb411;
+  font-size: 45px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+}
+.dishes .dish-item .top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.dishes .dish-item .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.dishes .dish-item .dish-card {
+  max-width: 22%;
+  box-shadow: 2px 7px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  background: #fff;
+}
+.dishes .dish-item .dish-card:hover {
+  box-shadow: 2px 7px 12px 0px rgba(0, 0, 0, 0.4);
+}
+.dishes .dish-item .top {
+  display: flex;
+}
+.dishes .dish-item .dish-card img {
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+}
+.dishes .dish-item .dish-card .icon {
+  display: flex;
+  gap: 6px;
+  padding-left: 15px;
+}
+.dishes .dish-item .dish-card .icon i {
+  color: #39db4a;
+  font-size: 14px;
+}
+.dishes .dish-item .dish-card .text {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.dishes .dish-item .dish-card .text h4 {
+  padding-top: 10px;
+  text-transform: capitalize;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  color: #000;
+}
+.dishes .dish-item .dish-card .text p {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: justify;
+}
+.dishes .dish-item .dish-card .text .add-to-cart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.dishes .dish-item .dish-card .text .add-to-cart a {
+  padding: 5px 10px;
+  background: #192b53;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.dishes .dish-item .dish-card .text .add-to-cart p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #39db4a;
+}
+.dishes .dish-item .dish-card .heart {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #4942e4;
+  transition: 0.5s;
+}
+.dishes .dish-item .dish-card .heart:hover {
+  transform: scale(1.3);
+}
+.dishes .dish-item .dish-card .heart i {
+  font-size: 20px;
+  padding: 6px 0 0 5px;
+  color: #fff;
+}
+/* ====== end our dishes section ====== */
+/* ================================================= */
+/* ====== start our special disih ====== */
+.special-dish {
+  margin-top: 90px;
+}
+.special-dish .text-special p {
+  text-align: center;
+  font-size: 22px;
+  color: #39db4a;
+  font-weight: 500;
+}
+.special-dish .text-special h2 {
+  text-align: center;
+  color: #ffb411;
+  font-size: 45px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+}
+.special-dish .special-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.special-dish .special-item .card-spl {
+  position: relative;
+  max-width: 300px;
+  box-shadow: 2px 7px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.special-dish .special-item .card-spl .red-cart {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ec1212;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.special-dish .special-item .card-spl .green {
+  background-color: rgb(19, 197, 19);
+}
+.special-dish .special-item .card-spl .red-cart p {
+  font-size: 12px;
+  color: #000;
+  transform: translate(2px, 6px);
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3px;
+}
+.special-dish .special-item .card-spl:hover {
+  box-shadow: 2px 7px 12px 0px rgba(0, 0, 0, 0.4);
+}
+.special-dish .special-item .card-spl img {
+  width: 100%;
+  padding: 20px;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.special-dish .special-item .card-spl img:hover {
+  transform: scale(1.1);
+}
+.special-dish .special-item .card-spl .text-card {
+  padding: 0 15px;
+}
+.special-dish .special-item .card-spl .text-card h3 {
+  font-size: 25px;
+  color: #000;
+  font-weight: 500;
+}
+.special-dish .special-item .card-spl .text-card p {
+  text-align: start;
+  font-size: 18px;
+  color: #555555;
+}
+.special-dish .special-item .card-spl .text-card .praice-and-rating {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.special-dish .special-item .card-spl .text-card .praice-and-rating p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.special-dish .special-item .card-spl .text-card .praice-and-rating i {
+  font-size: 18px;
+  color: #28ac61;
+}
+.special-dish .special-item .card-spl .text-card .praice-and-rating span {
+  font-size: 20px;
+  font-weight: normal;
+}
+/* ====== end our special disih ====== */
+/* ============================================= */
+/* ====== start about us section ====== */
+.about-us {
+  margin-top: 70px;
+  padding: 30px 0;
+}
+.about-us p {
+  text-align: center;
+  font-size: 22px;
+  color: #39db4a;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.about-us h2 {
+  text-align: center;
+  color: #ffb411;
+  font-size: 45px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.about-us .about-item {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.about-us .about-item .photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  transition: 0.5s;
+}
+.about-us .about-item .photo:hover {
+  transform: scale(1.15);
+}
+.about-us .about-item .photo img {
+  width: 100%;
+}
+.about-us .about-item .text-content {
+  max-width: 65%;
+}
+.about-us .about-item .text-content h2 {
+  text-align: center;
+  color: #25272e;
+  font-size: 35px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.about-us .about-item .text-content p {
+  text-align: justify;
+  font-size: 16px;
+  color: #786b6a;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 10px 0;
+}
+
+.about-us .about-item .text-content .text-link {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.about-us .about-item .text-content .text-link .card {
+  padding: 10px 22px;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.about-us .about-item .text-content .text-link .card i {
+  font-size: 20px;
+  color: #39db4a;
+  padding-top: 1px;
+  margin-right: 10px;
+}
+.about-us .about-item .text-content .text-link .card span {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+.about-us .about-item .text-content a {
+  padding: 10px 22px;
+  background: #192b53;
+  color: #fff;
+  display: inline-block;
+  margin-top: 25px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+/* ====== end about us section ====== */
+/* ============================================ */
+/* ====== start service section ====== */
+.service {
+  margin-top: 70px;
+}
+.service p {
+  text-align: center;
+  font-size: 22px;
+  color: #39db4a;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.service h2 {
+  text-align: center;
+  color: #1a2855;
+  font-size: 45px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.service .service-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.service .service-item .card {
+  max-width: 30%;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 2px 7px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+}
+.service .service-item .card:hover {
+  box-shadow: 2px 7px 12px 0px rgba(0, 0, 0, 0.5);
+}
+.service .service-item .card i {
+  font-size: 100px;
+  color: #f87f02;
+  transition: 0.5s;
+}
+.service .service-item .card i:hover {
+  transform: scale(1.15);
+}
+.service .service-item .card h3 {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.service .service-item .card p {
+  font-size: 16px;
+  color: #786b6a;
+  text-align: justify;
+  margin-top: 10px;
+}
+/* ====== end service section ====== */
+/* ========================================== */
+/* ====== satrt review section ====== */
+.review {
+  margin-top: 70px;
+  padding: 30px 0;
+}
+.review p {
+  text-align: center;
+  font-size: 22px;
+  color: #39db4a;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.review h2 {
+  text-align: center;
+  color: #1a2855;
+  font-size: 45px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.review .review-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.review .review-item .review-card {
+  max-width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 2px 7px 12px 0px rgba(0, 0, 0, 0.1);
+}
+.review .review-item .review-card:hover {
+  box-shadow: 2px 7px 12px 0px rgba(0, 0, 0, 0.5);
+}
+.review .review-item .review-card .top {
+  display: flex;
+  justify-content: space-between;
+}
+.review .review-item .review-card .photo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.review .review-item .review-card .name p {
+  font-size: 17px;
+  color: #000;
+  font-weight: 600;
+}
+.review .review-item .review-card .name .star {
+  font-size: 14px;
+  font-weight: 700;
+  word-spacing: -2px;
+  color: #39db4a;
+  text-align: start;
+}
+.review .review-item .review-card .top .fa-message {
+  font-size: 35px;
+  color: #999999;
+}
+.review .review-item .review-card .text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+  text-align: justify;
+  margin-top: 10px;
+}
+.review .review-circle {
+  margin-top: 50px;
+}
+
+/* ====== end review section ====== */
+/* ========================================= */
+/* ====== start order section ====== */
+.order {
+  margin-top: 70px;
+  padding: 30px 0;
+}
+.order p {
+  text-align: center;
+  font-size: 22px;
+  color: #39db4a;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.order h2 {
+  text-align: center;
+  color: #1a2855;
+  font-size: 45px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+form {
+  padding: 20px 50px;
+  border-radius: 10px;
+  background: #e1e4ed;
+  margin: 0 auto;
+  width: 90%;
+}
+form .form-field {
+  display: flex;
+  justify-content: space-between;
+  gap: 6%;
+}
+form .order-left {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+
+form .order-right {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+form label {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+form input,
+select {
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  margin: 4px 0 7px 0;
+}
+form input::placeholder {
+  color: #949e9e;
+}
+form label .optn {
+  font-size: 18px;
+  color: #949e9e;
+}
+input[type="date"] {
+  font-size: 18px;
+  color: #949e9e;
+}
+input[type="time"] {
+  font-size: 18px;
+  color: #949e9e;
+}
+
+textarea {
+  padding: 20px;
+  font-size: 18px;
+  margin-top: 5px;
+  outline: none;
+  border-radius: 10px;
+}
+form .order-left .address {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px 80px 20px 20px;
+  margin-top: 33px;
+}
+form .order-left .address p {
+  text-align: start;
+  font-size: 20px;
+  font-weight: 500;
+}
+form .order-left .address label {
+  font-size: 14px;
+}
+form .order-left .address input {
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 4px 0 7px 0;
+  padding: 4px 5px 4px 10px;
+  float: right;
+  clear: both;
+}
+form .order-left .address::placeholder {
+  font-size: 14px;
+}
+form .btn {
+  margin-top: 30px;
+}
+input[type="button"] {
+  display: block;
+  margin: 0 auto;
+  text-transform: capitalize;
+  padding: 10px 22px;
+  background: #192b53;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* ====== end order section ====== */
+/* ===================================== */
+/* ====== start footer section ====== */
+footer {
+  background: #263238;
+  padding: 30px;
+}
+.footer {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer h4 {
+  color: #eceff8;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 28px;
+}
+.footer ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+.footer .mail{
+ text-transform:lowercase ;
+}
+.footer .social{
+  padding-right: 10px;
+  color: #ffffff;
+  font-size: 18px;
+}
+footer p{
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: capitalize
+}
+/* ====== end footer section ====== */
